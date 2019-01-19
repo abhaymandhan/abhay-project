@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bhagat</title>
+	<style type="text/css">
+		#block1
+		{
+			width: 1366px;
+			height:1000px;
+		background-color: black;
+		background-image: url('bhagatsingh.jpg');
+		background-repeat: repeat;
+		
+		}
+		#block1 #block2
+		{
+			width:1366px;
+			height: 100px;
+			background-color: red;
+			position:fixed;
+			top:60px;
+
+		}
+	
+          #block2 h1
+		
+ 		{
+			color: blue;
+		  text-decoration: underline;
+		  font-size: 40px;
+		  background-color: pink;
+		  border: 5px dotted blue;
+		  border-radius: 15px;
+           text-align: center;
+ 		  z-index: 99;
+		}
+		#block3
+		{ 
+			position: relative;
+			top:200px;
+			left: 450px;
+			font-size: 20px;
+			font-family: comic sans ms;
+
+		}
+		#om
+		{
+			color: red;
+			position: relative;
+			top: 800px;
+			left: 500px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function f1(){
+			var x=document.getElementById('block3');
+			alert(x.innerHTML);
+			x.innerHTML="ae me nu keh ra bhai trilok dekh le";
+		}
+		function f2()
+		{
+			var x=document.getElementById('block3');
+			x.innerHTML="Abhay mandhan";
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="block1">
+    <div id="block2">
+    	<h1 >bhagat singh jindabad</h1>
+    </div>
+		<div id="block3" onmouseover="f1()" onmouseout="f2()"  >
+			<marquee direction="up" scrolldelay="500" ><h1 >Abhay mandhan(fan of bhagat singh)</h1>
+		</marquee>
+		</div>
+		<h1 id="om">SCROLL ENDING</h1>
+	</div>
+</body>
+</html>
